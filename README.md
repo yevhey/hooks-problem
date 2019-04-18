@@ -1,5 +1,4 @@
-### `cd app`
-### `npm run build`
+### `cd components` -> `npm run build`
 ### open `app/index.html` to see errors in the console.
 
 It says

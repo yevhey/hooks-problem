@@ -1,12 +1,13 @@
-var path = require("path");
-var webpack = require("webpack");
+const webpack = require("webpack");
+const path = require("path");
+
 module.exports = {
   mode: "development",
-  entry: ["./index.js"],
+  entry: ["./Input.js"],
   output: {
     path: path.join(__dirname),
-    filename: "1.js",
-    library: "comps"
+    filename: "dll.js",
+    library: "components"
   },
   module: {
     rules: [
@@ -22,7 +23,7 @@ module.exports = {
   plugins: [
     new webpack.DllPlugin({
       path: path.join(__dirname, "manifest.json"),
-      name: "comps"
+      name: "components"
     })
   ]
 };

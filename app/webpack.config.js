@@ -1,5 +1,6 @@
-var path = require("path");
-var webpack = require("webpack");
+const webpack = require("webpack");
+const path = require("path");
+
 module.exports = {
   mode: "development",
   entry: ['./index.js'],
@@ -19,7 +20,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DllReferencePlugin({
-      scope: "aaa",
+      scope: "components",
       manifest: require("../components/manifest.json"),
       extensions: [".js"]
     })

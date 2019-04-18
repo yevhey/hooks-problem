@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Input from 'aaa/index';
+import Input from 'components/Input';
 
 const Main = () => <Input />;
 
