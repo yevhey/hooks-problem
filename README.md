@@ -1,1 +1,1 @@
-# hooks-problem
+# open `app/index.html` to see errors in the console.
